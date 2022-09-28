@@ -1,0 +1,17 @@
+.CharacterBuilder-Background{
+    margin: auto;
+    color:#0b182A!important;
+    background-color:#1E304B!important
+}
+.CharacterBuilder-Content{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #DBAE6F;
+    padding: 10px;
+  }
+.CharacterBuilder-margin-top{
+    margin-top: 16px !important;
+}
+.CharacterBuilder-row-padding{
+    padding: 0 8px;
+}
