@@ -1,17 +1,74 @@
 .CharacterBuilder-Background{
     margin: auto;
     color:#0b182A!important;
-    background-color:#1E304B!important
+    background-color:#1E375F!important;
+    
 }
 .CharacterBuilder-Content{
     margin: auto;
-    width: 60%;
+    width: 8.5in;
     border: 3px solid #DBAE6F;
     padding: 10px;
+    box-shadow: 0px 0px 20px 20px #0b182A;
+    background-color:#1E304B!important;
   }
+
 .CharacterBuilder-margin-top{
-    margin-top: 16px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 .CharacterBuilder-row-padding{
-    padding: 0 8px;
+    overflow: hidden;
+}
+.Upper-Container{
+    border: 3px solid #fff;
+    padding: 10px;
+}
+.Upper-Child{
+    width: 50%;
+    float: left;
+}
+.Logo-Container{
+    width: 400px;
+    height: 100px;
+    background-image: url("XPLogo.png");
+    background-size: 400px 100px;
+    background-position:center;
+}
+.Name-Label-Container{
+    padding-top: 40px;
+    display:flex;
+    flex-direction:column;
+}
+.Name-Box{
+    padding: 5px 5px; 
+    line-height: 15px;
+    font-size: 20px;
+}
+.XP-Class-Archetype-Container{
+    display: grid;
+    width: 40%;
+    gap: 10px;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 40px 40px;
+}
+.Class-Label-Container{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction:column;
+}
+
+.XP-Label-Container{
+    grid-column: 2;
+    grid-row: 1;
+    display:flex;
+    flex-direction:column;
+}
+
+.XP-Spent-Label-Container{
+    grid-column: 3;
+    grid-row: 1;
+    display:flex;
+    flex-direction:column;
 }

@@ -8,6 +8,8 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Libre+Baskerville'>
 <style>
   html,body, p,h1,h2,h3,h4,h5,h6 {font-family: "Libre Baskerville", serif; color:#E3D1A0}
+  input[type="text"] {font-family: "Libre Baskerville", serif;}
+  label {font-size: 10px; font-family: "Libre Baskerville", serif; color:#E3D1A0}
   </style>
 </head>
 <body class="CharacterBuilder-Background">
@@ -16,130 +18,71 @@
 
     <!-- The Grid -->
     <div class="CharacterBuilder-row-padding">
-    
-      <!-- Left Column -->
-      <div class="CharacterBuilder-third">
-      
-        <div class="CharacterBuilder-white CharacterBuilder-text-grey CharacterBuilder-card-4">
-          <div class="CharacterBuilder-display-container">
-           <!-- <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">-->
-            <div class="CharacterBuilder-display-bottomleft CharacterBuilder-container CharacterBuilder-text-black">
-              <h2>Jane Doe</h2>
-            </div>
+      <div class="Upper-Child">
+        <div class="Logo-Container">
+          <div class="Name-Label-Container">
+            <label for="charName">Character Name:</label>
+            <input class="Name-Box" type="text" id="charName" name="charName" size="35px" value="Character Name"><br>
           </div>
-          <div class="CharacterBuilder-container">
-            <p><i class="fa fa-briefcase fa-fw CharacterBuilder-margin-right CharacterBuilder-large CharacterBuilder-text-teal"></i>Designer</p>
-            <p><i class="fa fa-home fa-fw CharacterBuilder-margin-right CharacterBuilder-large CharacterBuilder-text-teal"></i>London, UK</p>
-            <p><i class="fa fa-envelope fa-fw CharacterBuilder-margin-right CharacterBuilder-large CharacterBuilder-text-teal"></i>ex@mail.com</p>
-            <p><i class="fa fa-phone fa-fw CharacterBuilder-margin-right CharacterBuilder-large CharacterBuilder-text-teal"></i>1224435534</p>
-            <hr>
-  
-            <p class="CharacterBuilder-large"><b><i class="fa fa-asterisk fa-fw CharacterBuilder-margin-right CharacterBuilder-text-teal"></i>Skills</b></p>
-            <p>Adobe Photoshop</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge CharacterBuilder-small">
-              <div class="CharacterBuilder-container CharacterBuilder-center CharacterBuilder-round-xlarge CharacterBuilder-teal" style="width:90%">90%</div>
-            </div>
-            <p>Photography</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge CharacterBuilder-small">
-              <div class="CharacterBuilder-container CharacterBuilder-center CharacterBuilder-round-xlarge CharacterBuilder-teal" style="width:80%">
-                <div class="CharacterBuilder-center CharacterBuilder-text-white">80%</div>
-              </div>
-            </div>
-            <p>Illustrator</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge CharacterBuilder-small">
-              <div class="CharacterBuilder-container CharacterBuilder-center CharacterBuilder-round-xlarge CharacterBuilder-teal" style="width:75%">75%</div>
-            </div>
-            <p>Media</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge CharacterBuilder-small">
-              <div class="CharacterBuilder-container CharacterBuilder-center CharacterBuilder-round-xlarge CharacterBuilder-teal" style="width:50%">50%</div>
-            </div>
-            <br>
-  
-            <p class="CharacterBuilder-large CharacterBuilder-text-theme"><b><i class="fa fa-globe fa-fw CharacterBuilder-margin-right CharacterBuilder-text-teal"></i>Languages</b></p>
-            <p>English</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge">
-              <div class="CharacterBuilder-round-xlarge CharacterBuilder-teal" style="height:24px;width:100%"></div>
-            </div>
-            <p>Spanish</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge">
-              <div class="CharacterBuilder-round-xlarge CharacterBuilder-teal" style="height:24px;width:55%"></div>
-            </div>
-            <p>German</p>
-            <div class="CharacterBuilder-light-grey CharacterBuilder-round-xlarge">
-              <div class="CharacterBuilder-round-xlarge CharacterBuilder-teal" style="height:24px;width:25%"></div>
-            </div>
-            <br>
-          </div>
-        </div><br>
-  
-      <!-- End Left Column -->
+        </div> 
+        <!-- End Logo and Name -->
       </div>
-  
+      <!-- Start class and archetype and XP -->
+      <div class="Upper-Child">
+        <div class="XP-Class-Archetype-Container">
+
+           <!-- Start Class -->
+          <div class="Class-Label-Container">
+            <label for="class">Class:</label>
+            <input type="text" id="className" list="class" value="Class"/>
+            <datalist name="class" id="class">
+              <option>Mage</option>
+              <option>Warior</option>
+              <option>Rogue</option>
+              <option>Craftsman</option>
+              <option>Mentalist</option>
+            </datalist>
+            <!-- End Class -->
+          </div>
+
+          <!-- Start XP Total -->
+          <div class="XP-Label-Container">
+            <label for="xpTotal">XP Total:</label>
+            <input type="number" id="xpTotal" value="XP Total"/>
+            <!-- End XP -->
+          </div>
+
+          <!-- Start XP Spent -->
+          <div class="XP-Spent-Label-Container">
+            <label for="xpSpent">XP Spent:</label>
+            <input type="number" id="xpSpent" value="XP Spent"/>
+            <!-- End XP -->
+          </div>
+          
+          <!-- Archetype Start -->
+          <div class="Archetype-Label-Container">
+            <label for="archName">Archetype(s):</label>
+            <input class="Archetype-box" type="text" id="archName" name="archName" value="Archetype(s)"><br>
+          <!-- Start XP Spent -->
+          </div>
+        </div>
+      </div>
+        <!-- End class and archetype and XP-->
+
       <!-- Right Column -->
-      <div class="CharacterBuilder-twothird">
+      <!--<div class="CharacterBuilder-twothird"> -->
       
-        <div class="CharacterBuilder-container CharacterBuilder-card CharacterBuilder-white CharacterBuilder-margin-bottom">
-          <h2 class="CharacterBuilder-text-grey CharacterBuilder-padding-16"><i class="fa fa-suitcase fa-fw CharacterBuilder-margin-right CharacterBuilder-xxlarge CharacterBuilder-text-teal"></i>Work Experience</h2>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>Front End Developer / CharacterBuilderschools.com</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>Jan 2015 - <span class="CharacterBuilder-tag CharacterBuilder-teal CharacterBuilder-round">Current</span></h6>
-            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>Web Developer / something.com</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>Jun 2010 - Mar 2012</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-          </div>
-        </div>
-  
-        <div class="CharacterBuilder-container CharacterBuilder-card CharacterBuilder-white">
-          <h2 class="CharacterBuilder-text-grey CharacterBuilder-padding-16"><i class="fa fa-certificate fa-fw CharacterBuilder-margin-right CharacterBuilder-xxlarge CharacterBuilder-text-teal"></i>Education</h2>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>CharacterBuilderSchools.com</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>Forever</h6>
-            <p>Web Development! All I need to know in one place</p>
-            <hr>
-          </div>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>London Business School</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>2013 - 2015</h6>
-            <p>Master Degree</p>
-            <hr>
-          </div>
-          <div class="CharacterBuilder-container">
-            <h5 class="CharacterBuilder-opacity"><b>School of Coding</b></h5>
-            <h6 class="CharacterBuilder-text-teal"><i class="fa fa-calendar fa-fw CharacterBuilder-margin-right"></i>2010 - 2013</h6>
-            <p>Bachelor Degree</p><br>
-          </div>
-        </div>
-  
       <!-- End Right Column -->
-      </div>
+      <!--</div> -->
       
     <!-- End Grid -->
     </div>
     
     <!-- End Page Container -->
   </div>
-  
-  <footer class="CharacterBuilder-container CharacterBuilder-teal CharacterBuilder-center CharacterBuilder-margin-top">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official CharacterBuilder-hover-opacity"></i>
-    <i class="fa fa-instagram CharacterBuilder-hover-opacity"></i>
-    <i class="fa fa-snapchat CharacterBuilder-hover-opacity"></i>
-    <i class="fa fa-pinterest-p CharacterBuilder-hover-opacity"></i>
-    <i class="fa fa-twitter CharacterBuilder-hover-opacity"></i>
-    <i class="fa fa-linkedin CharacterBuilder-hover-opacity"></i>
-    <p>Github: <a href="https://github.com/mdellutri/XenosParagonCharacterApp" target="_blank">mdellutri</a></p>
-  </footer>
-  
-  </body>
-  </html>
+  <!-- For the text field refil-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="characterBuilder.js"></script>
+</body>
+</html>
   
