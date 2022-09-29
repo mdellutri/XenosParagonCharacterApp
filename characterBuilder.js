@@ -27,4 +27,19 @@ $(document).ready(function() {
         // if empty then updating with initial value
     }).val(characterClassHold);
     //----^-- setting initial value
+
+
+    var characterArchHold = 'Archetype(s)';
+    $("#archName").focus(function() {
+      if (characterArchHold == this.value)
+        // ------^-- empty the field only if the field value is initial  
+        this.value = '';
+        // emptying field value
+    }).blur(function() {
+      if (this.value.trim() == '')
+        // -----^-- condition field value is empty
+        this.value = characterArchHold;
+        // if empty then updating with initial value
+    }).val(characterArchHold);
+    //----^-- setting initial value
   });
