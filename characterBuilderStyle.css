@@ -79,6 +79,15 @@
 
 .Archetype-Label-Container{
     grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    padding-right: 3px;
+    display:flex;
+    flex-direction:column;
+}
+
+.Destiny-Label-Container{
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row: 2;
     padding-right: 3px;
