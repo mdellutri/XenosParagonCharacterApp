@@ -165,6 +165,76 @@ $(document).ready(function() {
           }).val(characterMPCurrentHold);
           //----^-- setting initial value
 
+          var characterHeritageHold = 'Heritage';
+          $("#HeritageEntry").focus(function() {
+            if (characterHeritageHold == this.value)
+              // ------^-- empty the field only if the field value is initial  
+              this.value = '';
+              // emptying field value
+          }).blur(function() {
+            if (this.value.trim() == '')
+              // -----^-- condition field value is empty
+              this.value = characterHeritageHold;
+              // if empty then updating with initial value
+          }).val(characterHeritageHold);
+          //----^-- setting initial value
+
+          var characterSizeHold = 'Size';
+          $("#SizeEntry").focus(function() {
+            if (characterSizeHold == this.value)
+              // ------^-- empty the field only if the field value is initial  
+              this.value = '';
+              // emptying field value
+          }).blur(function() {
+            if (this.value.trim() == '')
+              // -----^-- condition field value is empty
+              this.value = characterSizeHold;
+              // if empty then updating with initial value
+          }).val(characterSizeHold);
+          //----^-- setting initial value
+
+          var characterHT1Hold = 'Heritage Trait 1';
+          $("#HeritageTraits1").focus(function() {
+            if (characterHT1Hold == this.value)
+              // ------^-- empty the field only if the field value is initial  
+              this.value = '';
+              // emptying field value
+          }).blur(function() {
+            if (this.value.trim() == '')
+              // -----^-- condition field value is empty
+              this.value = characterHT1Hold;
+              // if empty then updating with initial value
+          }).val(characterHT1Hold);
+          //----^-- setting initial value
+
+          var characterHT2Hold = 'Heritage Trait 2';
+          $("#HeritageTraits2").focus(function() {
+            if (characterHT2Hold == this.value)
+              // ------^-- empty the field only if the field value is initial  
+              this.value = '';
+              // emptying field value
+          }).blur(function() {
+            if (this.value.trim() == '')
+              // -----^-- condition field value is empty
+              this.value = characterHT2Hold;
+              // if empty then updating with initial value
+          }).val(characterHT2Hold);
+          //----^-- setting initial value
+
+          var characterHT3Hold = 'Heritage Trait 3';
+          $("#HeritageTraits3").focus(function() {
+            if (characterHT3Hold == this.value)
+              // ------^-- empty the field only if the field value is initial  
+              this.value = '';
+              // emptying field value
+          }).blur(function() {
+            if (this.value.trim() == '')
+              // -----^-- condition field value is empty
+              this.value = characterHT3Hold;
+              // if empty then updating with initial value
+          }).val(characterHT3Hold);
+          //----^-- setting initial value
+
       //-----------END SETTING HOLDER VALUES--------------
 
 
@@ -223,5 +293,7 @@ $(document).ready(function() {
           this.value = MathObj.exec(this.value);
         }
       });
+
+       // -----------END INPUT MATH--------------
 
   });

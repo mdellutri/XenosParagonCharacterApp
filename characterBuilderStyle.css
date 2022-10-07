@@ -10,9 +10,13 @@
     height: 11in;
     border: 3px solid #DBAE6F;
     padding: 10px;
-    box-shadow: 0px 0px 20px 20px #0b182A;
+    box-shadow: 0px 0px 20px 20px #0b1b30;
     background-color:#1E304B!important;
   }
+
+.CharacterBuilder-Content select {
+    background-color: #fff;
+}
 
 .CharacterBuilder-margin-top{
     margin-top: 10px !important;
@@ -34,7 +38,9 @@
     height: 50px;
     background-image: url("XPLogo.png");
     background-size: 400px 50px;
-    background-position:center;
+    background-position:relative;
+    background-repeat: no-repeat;
+    background-position-y: -5px;
 }
 .Name-Label-Container{
     padding-top: 50px;
@@ -121,6 +127,11 @@ hr.rounded{
     grid-template-rows: 25px 75px 25px 75px
 }
 
+.HP-Container label{
+    padding-right: 3px;
+    text-align: right;
+}
+
 .HP-Total-Label {
     grid-column: 1;
     grid-row:1;
@@ -166,5 +177,109 @@ hr.rounded{
 .MP-Current-Entry {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row:2;
+}
+
+.MP-Container label{
+    padding-right: 3px;
+    text-align: right;
+}
+
+.Heritage-Container{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-column-gap: 10px;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.Heritage-Middle{
+    grid-column: 1;
+    display: grid;
+    row-gap: 4px;
+    grid-template-rows: 12px 28px 12px 28px;
+}
+
+.HeritageLabel{
+    grid-row: 1;
+}
+
+.HeritageEntry{
+    grid-row-start:2;
+    grid-row-end: 2;
+}
+
+.SizeLabel{
+    grid-row: 3;
+}
+
+.SizeEntry{
+    grid-row-start:4;
+    grid-row-end: 4;
+}
+
+.Heritage-Right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.HeritageTraitLabel label{
+    padding: 0px;
+    width: 186px;
+}
+
+.Heritage-Traits{
+    padding-top: 4px;
+    width: 186px;
+}
+
+.Defense-Points-Container{
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    position: relative;
+    top:-10px;
+    width: 103%;
+    height: 110%;
+    grid-template-columns: 35px 55px 45px 60px;
+    grid-template-rows: 30px 30px 30px 30px 30px;
+    background-color: #0b182A;
+}
+
+.DefensePointsLabel {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:1;
+    
+}
+.Defense-Points-Entry {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row:1;
+}
+
+.CritDieLabel {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:2;
+}
+
+.Crit-Die-Entry {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row:2;
+}
+
+.FumbleDieLabel {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row:2;
+}
+
+.Fumble-Die-Entry {
+    grid-column-start: 4;
+    grid-column-end: 5;
     grid-row:2;
 }
