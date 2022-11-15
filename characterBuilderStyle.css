@@ -114,7 +114,7 @@ hr.rounded{
     overflow: hidden;
     gap: 10px;
     grid-template-columns: 196px 196px 196px 196px;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 100px 150px;
 }
 
 .HP-Container {
@@ -223,16 +223,17 @@ hr.rounded{
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
-}
+    height: 120px;
+    }
 
-.HeritageTraitLabel label{
-    padding: 0px;
+.HeritageTraitLabel{
     width: 186px;
 }
 
 .Heritage-Traits{
-    padding-top: 4px;
     width: 186px;
+    height: 26px;
+
 }
 
 .Defense-Points-Container{
@@ -241,11 +242,8 @@ hr.rounded{
     display: grid;
     position: relative;
     top:-10px;
-    width: 103%;
-    height: 110%;
     grid-template-columns: 35px 55px 45px 60px;
     grid-template-rows: 30px 30px 30px 30px 30px;
-    background-color: #0b182A;
 }
 
 .DefensePointsLabel {
@@ -282,4 +280,67 @@ hr.rounded{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row:2;
+}
+
+.DamageResistLabel {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:3;
+}
+
+.DamageResistLabel {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row:3;
+}
+
+.Damage-Resist1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+.Damage-Resist2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+}
+.Damage-Resist3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+}
+
+.Movement-Container {
+    position: relative;
+    left: -10px;
+    grid-column: 4;
+    grid-row: 2;
+    padding-top: 5px;
+    margin: 5px;
+    display: grid;
+    row-gap:5px;
+    column-gap: 5px;
+    grid-template-columns: 38px 60px 35px 60px;
+    grid-template-rows: 40px 40px 40px;
+    text-align: right;
+}
+
+.RunLabel {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Run-Movement {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ClimbLabel {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.Climb-Movement {
+    grid-column: 4;
+    grid-row: 1;
 }

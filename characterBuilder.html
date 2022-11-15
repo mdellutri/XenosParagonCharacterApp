@@ -37,7 +37,7 @@
             <input class="Arch-Entry" type="text" id="className" list="class" value="Class"/>
             <datalist name="class" id="class">
               <option>Mage</option>
-              <option>Warior</option>
+              <option>Warrior</option>
               <option>Rogue</option>
               <option>Craftsman</option>
               <option>Mentalist</option>
@@ -69,7 +69,7 @@
           <div class="Destiny-Label-Container">
             <label for="destinyName">Destiny:</label>
            <!-- <input class="Arch-Entry" type="select" id="destinyName" list="destiny" value="Destiny"/>-->
-            <select class="Arch-Entry" name="destiny" id="destiny">
+            <select class="Arch-Entry"title="destiny"  name="destiny" id="destiny">
               <option value="The Fool">The Fool</option>
               <option value="The Magician">The Magician</option>
               <option value="The High Priestess">The High Priestess</option>
@@ -133,9 +133,9 @@
           </div>
           <div class="Heritage-Right">
             <label class ="HeritageTraitLabel" for="HeritageTraits1">Heritage Traits:</label>
-            <input class="Heritage-Traits" type="text" id="HeritageTraits1" value="Heritage Trait 1"/><br>
-            <input class="Heritage-Traits" type="text" id="HeritageTraits2" value="Heritage Trait 2"/><br>
-            <input class="Heritage-Traits" type="text" id="HeritageTraits3" value="Heritage Trait 3"/><br>
+            <input class="Heritage-Traits" type="text" id="HeritageTraits1" value="Heritage Trait 1"/>
+            <input class="Heritage-Traits" type="text" id="HeritageTraits2" value="Heritage Trait 2"/>
+            <input class="Heritage-Traits" type="text" id="HeritageTraits3" value="Heritage Trait 3"/>
           </div>
         </div>
         <div class="Defense-Points-Container">
@@ -143,7 +143,7 @@
           <input class="Defense-Points-Entry" type="text" id="DefensePoints" value="Defense Points Total"/><br>
           <label class ="CritDieLabel" for="CritDieEntry">Crit Die:</label>
          <!-- <input class="Crit-Die-Entry" type="text" id="CritDieEntry" list="CritDie" value="1dX"/><br> -->
-          <select class="Crit-Die-Entry" name="CritDie" id="CritDie">
+          <select class="Crit-Die-Entry" title="CritDie" name="CritDie" id="CritDie">
             <option value="1d4">1d4</option>
             <option value="1d6">1d6</option>
             <option value="1d8">1d8</option>
@@ -153,7 +153,7 @@
           </select>
           <label class ="FumbleDieLabel" for="FumbleDieEntry">Fumble Die:</label>
          <!--<input class="Fumble-Die-Entry" type="text" id="FumbleDieEntry" list="FumbleDie" value="1dX"/><br>--> 
-          <select class="Fumble-Die-Entry" name="FumbleDie" id="FumbleDie">
+          <select class="Fumble-Die-Entry" title="FumbleDie" name="FumbleDie" id="FumbleDie">
             <option value="1d4">1d4</option>
             <option value="1d6">1d6</option>
             <option value="1d8">1d8</option>
@@ -161,6 +161,24 @@
             <option value="1d12">1d12</option>
             <option value="1d20">1d20</option>
           </select>
+          <label class ="DamageResistLabel" for="DamageResist1">Dmg Resist:</label>
+            <input class="Damage-Resist1" type="text" id="DamageResist1" value="Damage Resistance 1"/>
+            <input class="Damage-Resist2" type="text" id="DamageResist2" value="Damage Resistance 2"/>
+            <input class="Damage-Resist3" type="text" id="DamageResist3" value="Damage Resistance 3"/>
+        </div>
+        <div class="Movement-Container">
+          <label class ="RunLabel" for="RunMovement">Run:</label>
+          <input class="Run-Movement" type="text" id="RunMovement" value="Run"/>
+          <label class ="ClimbLabel" for="ClimbMovement">Climb:</label>
+          <input class="Climb-Movement" type="text" id="ClimbMovement" value="Climb"/>
+          <label class ="SwimLabel" for="SwimMovement">Swim:</label>
+          <input class="Swim-Movement" type="text" id="SwimMovement" value="Swim"/>
+          <label class ="FlyLabel" for="FlyMovement">Fly:</label>
+          <input class="Fly-Movement" type="text" id="FlyMovement" value="Fly"/>
+          <label class ="TunnelLabel" for="TunnelMovement">Tunnel:</label>
+          <input class="Tunnel-Movement" type="text" id="TunnelMovement" value="Tunnel"/>
+          <label class ="JumpLabel" for="JumpMovement">Jump:</label>
+          <input class="Jump-Movement" type="text" id="JumpMovement" value="Jump"/>
         </div>
       </div>
     
