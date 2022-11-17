@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="characterBuilderStyle.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Libre+Baskerville'>
 <style>
-  html,body, p,h1,h2,h3,h4,h5,h6 {font-family: "Libre Baskerville", serif; color:#E3D1A0}
-  input[type="text"] {font-family: "Libre Baskerville", serif;}
-  label {font-size: 10px; font-family: "Libre Baskerville", serif; color:#E3D1A0}
+  html,body, p,h1,h2,h3,h4,h5,h6 {font-family: "Libre Baskerville", serif; color:#DBAE6F}
+  input[type="text"], select {font-family: "Libre Baskerville", serif;}
+  label {font-size: 10px; font-family: "Libre Baskerville", serif; color:#DBAE6F}
   </style>
 </head>
 <body class="CharacterBuilder-Background">
@@ -69,7 +69,7 @@
           <div class="Destiny-Label-Container">
             <label for="destinyName">Destiny:</label>
            <!-- <input class="Arch-Entry" type="select" id="destinyName" list="destiny" value="Destiny"/>-->
-            <select class="Arch-Entry"title="destiny"  name="destiny" id="destiny">
+            <select class="Destiny-Entry"title="destiny"  name="destiny" id="destiny">
               <option value="The Fool">The Fool</option>
               <option value="The Magician">The Magician</option>
               <option value="The High Priestess">The High Priestess</option>
@@ -153,7 +153,7 @@
           </select>
           <label class ="FumbleDieLabel" for="FumbleDieEntry">Fumble Die:</label>
          <!--<input class="Fumble-Die-Entry" type="text" id="FumbleDieEntry" list="FumbleDie" value="1dX"/><br>--> 
-          <select class="Fumble-Die-Entry" title="FumbleDie" name="FumbleDie" id="FumbleDie">
+          <select class="Fumble-Die-Entry" title="FumbleDie" name="FumbleDie" id="FumbleDie" >
             <option value="1d4">1d4</option>
             <option value="1d6">1d6</option>
             <option value="1d8">1d8</option>
